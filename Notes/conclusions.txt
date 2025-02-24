@@ -1,0 +1,39 @@
+1.
+- 40 studies review
+- great potential
+- innovation in education
+- References.: 9.
+
+3.
+- Proposes a tool to create worked examples to study with further explanations
+- First year python course
+- Generated worked examples showed to be valuable and usefull
+
+4.
+- Intruductory programming course
+- 50 students
+- LLM powered virtual teaching assistant
+- Significant improvements in final scores
+
+5.
+- Making the right prompt matters in learning
+- Bad prompt(AI Single Prompt) -> negative result
+- Good prompt(Hybrid approach) -> positive result
+
+6.
+- Incorporating experimental teaching achieved good results.
+
+7.
+- Students who are already poised to succeed can leverage GenAI to accelerate
+- Strugglingstudents may be hindered by using GenAI, leaving them with an illusion of competence, which can have negative effects
+- Most commonly used GenAI technologies are not informed by pedagogy
+- Better "teachers": CodeHelp, CodeAid, Ivie
+
+8.
+-Survey analysis highlights that students must be made aware of what types of queries are suitable for appropriate ChatGPT responses, and what are unsuitable to utilize ChatGPT in a constructive way.
+- step-by-step processing or deriving conclusions from interconnected and complicated logic are not suitable for the ChatGPT application.
+
+
+9.
+- Described system to use ai in education
+- Most clearly traditional teacher activities (curriculum developement, instructional design, lesson planning, summative assessments) won't need human interaction
