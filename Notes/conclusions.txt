@@ -30,7 +30,7 @@
 - Better "teachers": CodeHelp, CodeAid, Ivie
 
 8.
--Survey analysis highlights that students must be made aware of what types of queries are suitable for appropriate ChatGPT responses, and what are unsuitable to utilize ChatGPT in a constructive way.
+- Survey analysis highlights that students must be made aware of what types of queries are suitable for appropriate ChatGPT responses, and what are unsuitable to utilize ChatGPT in a constructive way.
 - step-by-step processing or deriving conclusions from interconnected and complicated logic are not suitable for the ChatGPT application.
 
 
