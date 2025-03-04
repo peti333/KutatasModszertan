@@ -1,0 +1,1 @@
+print(list(filter(lambda x : len(str(x)) == 2 , [x for x in range(100) if x % 2 == 0])))
