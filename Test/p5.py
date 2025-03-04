@@ -7,7 +7,7 @@ array = [64, 22, 63, 74, 25]
 length = len(array)
 max = array[0]
 for i in range(length):
-    #if(max < array[i]): Megoldás
+    #if() Egészítsd ki a if()-et hogy megvizsgálja a tömb értékét
         max = array[i]
 
 
