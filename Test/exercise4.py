@@ -1,3 +1,3 @@
-import sys
-
-print("Hello", "World", end="\n", sep=" ", file=sys.stdout, flush=False)
+# Draw a triangle usign the print statement
+for i in range(5):
+    print("*"*i)
