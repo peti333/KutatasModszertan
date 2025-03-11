@@ -15,7 +15,7 @@ print("Benedek")
 a = "Szia"
 b = "András"
 
-print(a,b)
+print(a,b+'!')
 # -----------------------------------------------------------------------------------
 # Harmadik feladat
 #Egészítsd ki, hogy kiírja a Python a képernyőre a barackot
