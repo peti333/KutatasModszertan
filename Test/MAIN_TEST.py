@@ -18,8 +18,9 @@ b = "András"
 print()
 # -----------------------------------------------------------------------------------
 # Harmadik feladat
+#Egészítsd ki, hogy kiírja a Python a képernyőre a barackot
 lista = ['alma', 'körte', 'barack']
-print(...) #Egészítsd ki, hogy kiírja a Python a képernyőre a barackot
+print(...) 
 
 # -----------------------------------------------------------------------------------
 # Negyedik feladat
@@ -27,14 +28,16 @@ print(...) #Egészítsd ki, hogy kiírja a Python a képernyőre a barackot
 # Ötödik feladat
 # -----------------------------------------------------------------------------------
 # Hatodik feladat
-lista = []
-for szam in lista:
-    del lista[0]
-    print(lista)
+#Írj olyan számokat a listába, amivel a print a fenti kommentben lévő eredményt ad.
 '''
 [4, 9]
 [9]
 '''
+lista = []
+for szam in lista:
+    del lista[0]
+    print(lista)
+
 # -----------------------------------------------------------------------------------
 # Hetedik feladat
 # -----------------------------------------------------------------------------------
