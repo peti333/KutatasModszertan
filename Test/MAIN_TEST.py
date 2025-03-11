@@ -26,6 +26,17 @@ print(...)
 # Negyedik feladat
 # -----------------------------------------------------------------------------------
 # Ötödik feladat
+#   Valósítsd meg a logikai táblázatot
+#
+
+#|      |  a I |  a H |
+#| b I  |   I  |   I  |
+#| b H  |   I  |   H  |
+#
+def Solution(a,b):
+    return not a and b #Ezt módosítsd
+
+print(str(Solution(True,True)))
 # -----------------------------------------------------------------------------------
 # Hatodik feladat
 #Írj olyan számokat a listába, amivel a print a fenti kommentben lévő eredményt ad.
@@ -40,8 +51,13 @@ for szam in lista:
 
 # -----------------------------------------------------------------------------------
 # Hetedik feladat
+# Írj egy ciklust ami generálja a következő tömböt:
+# [1,1,2,3,5,8,13,21,34,55]
 # -----------------------------------------------------------------------------------
 # Nyolcadik feladat
+# Írd ki az "a" változó értékét fordítva a kijelzőre!
+a = "Hello World"
+print(...)
 # -----------------------------------------------------------------------------------
 # Kilencedik feladat
 array = [1,5,11,9,4,2,8,3,1,6,6]
