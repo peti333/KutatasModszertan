@@ -4,7 +4,10 @@ from colored import Fore, Back, Style
 old_print = builtins.print
 
 def print_new(string):
-    old_print(string)
+    if type(string) == str:
+        old_print(string)
+    else:
+        old_print(str(string))
     return string
 
 builtins.print = print_new
@@ -18,7 +21,7 @@ builtins.print = print_new
 # Első feladat
 # Írd ki a kijelzőre, hogy "Szia Világ!"!
 
-answ_1 = print(...)
+answ_1 = print("Szia Világ!")
 
 # -----------------------------------------------------------------------------------
 # Második feladat
@@ -27,17 +30,18 @@ answ_1 = print(...)
 a = "Szia"
 b = "András"
 
-answ_2 = print()
+answ_2 = print(a+" "+b+"!")
 # -----------------------------------------------------------------------------------
 # Harmadik feladat
 #Egészítsd ki, hogy kiírja a Python a képernyőre a barackot
 lista = ['alma', 'körte', 'barack']
-answ_3 = print(...) 
+answ_3 = print(lista[2]) 
 # -----------------------------------------------------------------------------------
 # Negyedik feladat
 # Add meg egy négyzetszámnak a gyökét
 szam = 81
-answ_4 = print(...)
+answ_4 = print(szam**0.5)
+
 # -----------------------------------------------------------------------------------
 # Ötödik feladat
 #   Valósítsd meg a logikai táblázatot
@@ -48,7 +52,7 @@ answ_4 = print(...)
 #| b = H  |   I    |   H    |
 #
 def Solution(a,b):
-    return not a and b #Ezt módosítsd
+    return a or b #Ezt módosítsd
 
 print(str(Solution(True,True)))
 
@@ -60,23 +64,31 @@ print(str(Solution(True,True)))
 [9]
 '''
 test_list = []
-lista = []
-for szam in lista:
+lista = [1,4,9]
+for _ in lista:
     del lista[0]
-    test_list.append(print(lista))
+    test_list.append(list(lista))
+
+print(test_list)
 
 # -----------------------------------------------------------------------------------
 # Hetedik feladat
 # Írj egy ciklust ami generálja a következő tömböt:
 # [1,1,2,3,5,8,13,21,34,55]
 result = []
+a,b = 1,1
+for i in range(10):
+    result.append(a)
+    a,b = b, a+b
+
+print(result)
 
 
 # -----------------------------------------------------------------------------------
 # Nyolcadik feladat
 # Írd ki az "a" változó értékét fordítva a kijelzőre!
 a = "Hello World"
-answ_8 = print(...)
+answ_8 = print(a[::-1])
 
 # -----------------------------------------------------------------------------------
 # Kilencedik feladat
@@ -90,7 +102,8 @@ secondMax = array[0]
 for i in range(length):
     if(max < array[i]):
         max = array[i]
-
+    if(secondMax < array[i] and array[i]<max):
+        secondMax = array[i]
 #Írd át a kódot hogy a második legnagyobbat szám is meglegyen
 
 print( "legnagyobb: " + str(max) + "\nMásodik legnagyobb: " + str(secondMax) )
@@ -103,7 +116,7 @@ print( "legnagyobb: " + str(max) + "\nMásodik legnagyobb: " + str(secondMax) )
 l = [x for x in range(100)]
 res = []
 for x in l:
-    if ...:
+    if x %2 == 0 and len(str(x)) == 2:
         res.append(x)
 
 print(res)
@@ -118,7 +131,7 @@ except AssertionError:
     old_print(f'{Fore.white}{Back.red}Első feladat: Helyetelen!{Style.reset}')
 
 try:
-    assert answ_2 == "Szia Világ!"
+    assert answ_2 == "Szia András!"
     old_print(f'{Fore.white}{Back.green}Második feladat: Helyes!{Style.reset}')
 except AssertionError:
     old_print(f'{Fore.white}{Back.red}Második feladat: Helyetelen!{Style.reset}')
@@ -130,7 +143,7 @@ except AssertionError:
     old_print(f'{Fore.white}{Back.red}Harmadik feladat: Helyetelen!{Style.reset}')
 
 try:
-    assert (answ_4**(0.5)) == (szam**(0.5))
+    assert answ_4 == (szam**(0.5))
     old_print(f'{Fore.white}{Back.green}Negyedik feladat: Helyes!{Style.reset}')
 except AssertionError:
     old_print(f'{Fore.white}{Back.red}Negyedik feladat: Helyetelen!{Style.reset}')
@@ -145,8 +158,8 @@ except AssertionError:
     old_print(f'{Fore.white}{Back.red}Ötödik feladat: Helyetelen!{Style.reset}')
 
 try:
-    assert test_list[0] == "[4,9]"
-    assert test_list[1] == "[9]"
+    assert test_list[0] == [4,9]
+    assert test_list[1] == [9]
     old_print(f'{Fore.white}{Back.green}Hatodik feladat: Helyes!{Style.reset}')
 except AssertionError:
     old_print(f'{Fore.white}{Back.red}Hatodik feladat: Helyetelen!{Style.reset}')
@@ -164,7 +177,7 @@ except AssertionError:
     old_print(f'{Fore.white}{Back.red}Nyolcadik feladat: Helyetelen!{Style.reset}')
 
 try:
-    assert secondMax == "9"
+    assert secondMax == 9
     old_print(f'{Fore.white}{Back.green}Kilencedik feladat: Helyes!{Style.reset}')
 except AssertionError:
     old_print(f'{Fore.white}{Back.red}Kilencedik feladat: Helyetelen!{Style.reset}')
