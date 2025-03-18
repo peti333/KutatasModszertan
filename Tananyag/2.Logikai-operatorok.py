@@ -3,6 +3,7 @@
 igaz = True
 hamis = False
 
+print(igaz, hamis)
 print(igaz and hamis)
 print(igaz or hamis)
 print(True and igaz)
