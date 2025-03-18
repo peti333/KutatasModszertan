@@ -1,4 +1,4 @@
-# Functions
+# függvények, újra használható kód
 
 def plus(a,b):
     return a + b

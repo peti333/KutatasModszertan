@@ -1,33 +1,36 @@
+# operátorok
 a = 12
-b =20
+b = 20
 c = "almafa"
-l = [1,2,3,4,5]
+l = [1, 2, 3, 4, 5]
 
-print(sum(a,b))
-print(avg(a,b))
-print(sd(a,b))
-
+# lista elemeinek összege
 print(sum(l))
-print(avg(l))
-print(sd(l))
 
+# lista hossza
 print(len(c))
 
+# string-é alakítás, majd szó hossza
 print(len(str(a)))
 
-'''
-a+b
-a-b
-a*b
-a/b
-a%b
-a**b
+# matekos operátorok
+print(a + b)
 
-concatenation of two strings
-"a" + "b"
-"a" + str(5)
+print(a - b)
 
-operations between strings and integers
-"a"*5 -> aaaaa
-"a" + 5 -> error
-'''
+print(a * b)
+
+print(a / b)
+
+# osztásnak a maradéka
+print(a % b)
+
+# hatványozás, a a b-ediken
+print(a ** b)
+
+# összeadás string-en: összeköti a részszavakat
+print("a" + "b")
+print("a" + str(5))
+
+# szorzás számmal
+print("a" * 5)

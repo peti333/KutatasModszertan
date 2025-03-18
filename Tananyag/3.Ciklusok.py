@@ -1,8 +1,7 @@
-# Cycles
+# Ciklusok
 
 for i in range(100):
     print(i)
-
 
 a = 100
 while a < 100:
