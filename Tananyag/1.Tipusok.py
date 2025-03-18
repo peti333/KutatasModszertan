@@ -1,9 +1,9 @@
-# Types
-
+# Típusok & változók
 szam = 5
 szo = "asd"
 igazVagyHamis = True
 
+# print, képernyőre iratás
 print(szam)
 print(szo)
 print(igazVagyHamis)
