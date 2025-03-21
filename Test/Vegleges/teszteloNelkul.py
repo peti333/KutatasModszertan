@@ -54,7 +54,8 @@ for _ in lista:
     del lista[0]
     test_list.append(list(lista))
 
-print(test_list)
+for elem in test_list:
+    print(elem)
 
 # -----------------------------------------------------------------------------------
 # Hetedik feladat

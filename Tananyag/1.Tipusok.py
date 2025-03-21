@@ -22,6 +22,15 @@ print(lista[0])
 print(lista2[1])
 print(lista2[-1])
 
+#listahoz adás
+lista.append(100)
+print(lista)
+
+#törlés
+
+del lista[0]
+print(lista)
+
 lista3 = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15]
 
 print(lista3[1:8:2])

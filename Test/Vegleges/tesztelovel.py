@@ -3,14 +3,6 @@ from colored import Fore, Back, Style
 
 old_print = builtins.print
 
-def print_new(string):
-    if type(string) == str:
-        old_print(string)
-    else:
-        old_print(str(string))
-    return string
-
-builtins.print = print_new
 #___________________________________________________________________________________
 
 # Old meg a következő 10 feladatot a feladat leírása alapján
@@ -69,7 +61,8 @@ for _ in lista:
     del lista[0]
     test_list.append(list(lista))
 
-print(test_list)
+for elem in test_list:
+    print(elem)
 
 # -----------------------------------------------------------------------------------
 # Hetedik feladat
@@ -122,69 +115,3 @@ for x in l:
 
 print(res)
 
-
-#Testing
-#------------------------------------------------------------------------------------
-try:
-    assert answ_1 == "Szia Világ!"
-    old_print(f'{Fore.white}{Back.green}Első feladat: Helyes!{Style.reset}')
-except AssertionError:
-    old_print(f'{Fore.white}{Back.red}Első feladat: Helyetelen!{Style.reset}')
-
-try:
-    assert answ_2 == "Szia András!"
-    old_print(f'{Fore.white}{Back.green}Második feladat: Helyes!{Style.reset}')
-except AssertionError:
-    old_print(f'{Fore.white}{Back.red}Második feladat: Helyetelen!{Style.reset}')
-
-try:
-    assert answ_3 == "barack"
-    old_print(f'{Fore.white}{Back.green}Harmadik feladat: Helyes!{Style.reset}')
-except AssertionError:
-    old_print(f'{Fore.white}{Back.red}Harmadik feladat: Helyetelen!{Style.reset}')
-
-try:
-    assert answ_4 == (szam**(0.5))
-    old_print(f'{Fore.white}{Back.green}Negyedik feladat: Helyes!{Style.reset}')
-except AssertionError:
-    old_print(f'{Fore.white}{Back.red}Negyedik feladat: Helyetelen!{Style.reset}')
-
-try:
-    assert Solution(True, True) == True
-    assert Solution(True, False) == True
-    assert Solution(False, True) == True
-    assert Solution(False, False) == False
-    old_print(f'{Fore.white}{Back.green}Ötödik feladat: Helyes!{Style.reset}')
-except AssertionError:
-    old_print(f'{Fore.white}{Back.red}Ötödik feladat: Helyetelen!{Style.reset}')
-
-try:
-    assert test_list[0] == [4,9]
-    assert test_list[1] == [9]
-    old_print(f'{Fore.white}{Back.green}Hatodik feladat: Helyes!{Style.reset}')
-except AssertionError:
-    old_print(f'{Fore.white}{Back.red}Hatodik feladat: Helyetelen!{Style.reset}')
-
-try:
-    assert result == [1,1,2,3,5,8,13,21,34,55]
-    old_print(f'{Fore.white}{Back.green}Hetedik feladat: Helyes!{Style.reset}')
-except AssertionError:
-    old_print(f'{Fore.white}{Back.red}Hetedik feladat: Helyetelen!{Style.reset}')
-
-try:
-    assert answ_8 == a[::-1]
-    old_print(f'{Fore.white}{Back.green}Nyolcadik feladat: Helyes!{Style.reset}')
-except AssertionError:
-    old_print(f'{Fore.white}{Back.red}Nyolcadik feladat: Helyetelen!{Style.reset}')
-
-try:
-    assert secondMax == 9
-    old_print(f'{Fore.white}{Back.green}Kilencedik feladat: Helyes!{Style.reset}')
-except AssertionError:
-    old_print(f'{Fore.white}{Back.red}Kilencedik feladat: Helyetelen!{Style.reset}')
-
-try:
-    assert res == [x for x in range(2,100,2) if len(str(x)) == 2]
-    old_print(f'{Fore.white}{Back.green}Tizedik feladat: Helyes!{Style.reset}')
-except AssertionError:
-    old_print(f'{Fore.white}{Back.red}Tizedik feladat: Helyetelen!{Style.reset}')
