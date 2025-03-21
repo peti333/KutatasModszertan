@@ -1,0 +1,6 @@
+Palkó emberei:
+    -Gábor (emberi tanár): 5 pont
+        - jegyzet: nagyon kevés idő, egy két apró kiegészítés a tesztírás közben.
+        Feladatok túl nehezek.
+        Kéne a printe elé magyarázat vagy számozás
+    -Dorka (AI): x pont
