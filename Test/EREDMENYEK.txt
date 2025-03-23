@@ -4,3 +4,7 @@ Palkó emberei:
         Feladatok túl nehezek.
         Kéne a printe elé magyarázat vagy számozás
     -Dorka (AI): x pont
+Peti emberi:
+    - Ádám (emberi tanár): 5 pont
+        - jegyzet: kicsit változtatnom kellett a tananyagot hogy alap dolgokat könnyebben 
+        megértsen de a komplikáltabb feladatál túl soknak érezte és meg se próbálta érteni nagyon
