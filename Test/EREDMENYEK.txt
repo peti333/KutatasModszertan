@@ -8,3 +8,6 @@ Peti emberi:
     - Ádám (emberi tanár): 5 pont
         - jegyzet: kicsit változtatnom kellett a tananyagot hogy alap dolgokat könnyebben 
         megértsen de a komplikáltabb feladatál túl soknak érezte és meg se próbálta érteni nagyon
+    - Dani (AI): 3.5 pont (fél pont az egyik feladat rossz megoldásának kreativitásáért)
+        - jegyzet: lista index nagyon jó. printnél a "+" és "," -nél elfelejtette hogy a "+" létezik mert a chatgpt
+        nagyon belement a "," elmagyarázásába.
