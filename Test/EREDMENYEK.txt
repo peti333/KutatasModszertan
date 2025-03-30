@@ -2,8 +2,9 @@ Palkó emberei:
     -Gábor (emberi tanár): 5 pont
         - jegyzet: nagyon kevés idő, egy két apró kiegészítés a tesztírás közben.
         Feladatok túl nehezek.
-        Kéne a printe elé magyarázat vagy számozás
-    -Dorka (AI): x pont
+    -Dorka (AI): 5 pont
+        - jegyzet: Meglepően jól magyarázott az AI, időben is hatékonyan dolgoztak. A probléma annyi volt, hogy ha valamit
+        nem értett az alany, akkor azt már nem tudta máshogyan megfogalmazni, megértetni.
 Peti emberi:
     - Ádám (emberi tanár): 5 pont
         - jegyzet: kicsit változtatnom kellett a tananyagot hogy alap dolgokat könnyebben 
