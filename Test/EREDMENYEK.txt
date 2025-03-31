@@ -12,3 +12,9 @@ Peti emberi:
     - Dani (AI): 3.5 pont (fél pont az egyik feladat rossz megoldásának kreativitásáért)
         - jegyzet: lista index nagyon jó. printnél a "+" és "," -nél elfelejtette hogy a "+" létezik mert a chatgpt
         nagyon belement a "," elmagyarázásába.
+Benedek emberei:
+    - Dorka (AI tanár): 5 pont:
+        minden feladatot amit elkezdett hibátlanul megoldott, használta az internetet és rájött a hatványozásra. A listák indexelése és megfordítása is jól ment.
+        A függvénnyek és a ciklusok túl nagy falatnak bizonyultak ilyen rövid itőtávra.
+    - Katalin (Emberi tanár): 5 pont:
+        Nagyon sok idő ment el a feladatok megértésére. A gyökös feladatot importálással próbálta meg megoldani amiről nem volt szó így nehezen jött össze. Az hogy mik azok a függvények nem került leadásra idő szűkében. Az igazságtábla mint fogalom hiányzott, így az értése és implementálása teljesen esélytelen volt. 
