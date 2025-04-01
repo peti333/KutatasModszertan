@@ -6,25 +6,25 @@
 \usepackage{hyperref}           % For clickable references
 \geometry{a4paper, margin=1in}  % Set margins for A4 paper
 
-\title{From Assistance to Dependence: Evaluating the Impact of Large Language Models on Coding Proficiency}
+\title{From Assistance to Dependence: Evaluating the Impact of Large Language Models on Coding Proficiency}  % Example title
 \author{
   Fegyó Benedek\\
-  \texttt{PZ20TK@inf.elte.hu} \\[1ex]
+  \texttt{pz20tk@inf.elte.hu} \\[1ex]
+  Horogszegi Richárd Pál\\
+  \texttt{******@email.hu} \\[1ex]
   Makk Péter\\
-  \texttt{tb9fop@inf.elte.hu} \\[1ex]
-  Horogszegi Pál\\
-  \texttt{******@inf.elte.hu} \\[2ex]
-  \textit{Department of Computer Science, University of Eötvös Loránd}
+  \texttt{tb9fop@inf.elte.hu} \\[2ex]
+  \textit{Department of Computer Science, University of ELTE Budapest}  % Example affiliation
 }
-\date{\today}  
+\date{\today}  % Automatically set the current date
 
 \begin{document}
 
 \maketitle
 
 \begin{abstract}
-    (Benedek)\\
-    As AI-powered tools, particularly Large Language Models (LLMs), become increasingly integrated into education, understanding their effectiveness in programming instruction is crucial. This paper compares the learning outcomes of novice programmers using AI-assisted learning versus traditional human tutoring. We analyze improvements in coding proficiency, problem-solving ability, and long-term retention through a controlled study. The findings reveal strengths and weaknesses in both approaches and provide recommendations for balancing AI assistance with human mentorship to optimize learning outcomes.
+    (Benedek Done)\\
+    The integration of Artificial Intelligence (AI) into programming education has sparked debate about its effectiveness in enhancing learning outcomes. This study compares the impact of AI-assisted learning using Large Language Models (LLMs) with traditional human tutoring on novice programmers. A controlled experiment involving two groups—those receiving human tutoring and those using AI assistance—assessed improvements in coding proficiency, problem-solving ability, and long-term retention. The results show that while AI-assisted learners benefit from rapid feedback and structured instruction, they often struggle with debugging and conceptual understanding. In contrast, human tutoring fosters deeper learning and adaptability. The findings suggest that a hybrid approach, combining AI's efficiency with human mentorship, may offer the best balance for optimizing educational outcomes. This study contributes to the ongoing discourse on AI in education, highlighting the need for balanced instructional strategies that leverage AI's strengths while mitigating its limitations.
 \end{abstract}
 
 \section{Introduction (Peti) (Done)}
@@ -41,41 +41,30 @@ Understanding the role of AI in programming education is essential for designing
 
 To what extent do large language models and human teachers differ in their effectiveness for novice programmers learning a programming language.
 
-\section{Literature Review (Benedek)}
+\section{Literature Review (Benedek) (Done)}
 
 Recent studies have examined AI in education, particularly in STEM fields. Studies by Brown et al. (2023) show that AI-assisted learners complete coding tasks faster but often lack a deep understanding of fundamental principles. Research by Smith and Taylor (2022) suggests that human tutoring remains superior for conceptual clarity and debugging skills. This section synthesizes research on AI-based learning versus traditional tutoring.
 
 \subsection{Theories of Learning and AI}
-AI-assisted learning is rooted in constructivist learning theories, where students build knowledge actively. Vygotsky's Zone of Proximal Development (ZPD) suggests that AI tutors may act as scaffolding tools. However, cognitive load theory warns that excessive reliance on AI may reduce deep learning and problem-solving skills.
+AI-assisted learning is rooted in constructivist learning theories, where students build knowledge actively. Vygotsky's Zone of Proximal Development (ZPD) suggests that AI tutors may act as scaffolding tools. However, cognitive load theory warns that excessive reliance on AI may reduce deep learning and problem-solving skills.However, multiple studies suggest, that in the year of writing this paper (2025 Q1), the AI models are not intelligent enough to be adequate in teaching. They are a perfect companion for someone, who already knows what they are doing, but they can cause a lot of harm for a novice professional, trying to acquire precise knowledge. \cite{https://dl.acm.org/doi/pdf/10.1145/3632620.3671116}
 
 \subsection{Comparison of AI and Human Tutors}
-Human tutors provide adaptive feedback, emotional support, and context-based explanations, while AI provides instant responses and vast resources but lacks intuition and nuanced understanding. Prior studies indicate that mixed approaches might be most effective.
+Human tutors provide feedback and understand human emotions. Human tutors are also able to asses the boundaries of their competence, thus hallucinating far less than their AI counterparts. State-of-the-art semester long studies assess that the more proficient someone gets in programming, the less they rely on AI tutors. \cite{https://dl.acm.org/doi/abs/10.1145/3657604.3662036}. Furthermore, it is suggested that knowledge acquired by asking a large-language model stays much less permanent than if it had been acquired by other means. On study even goes so far as to suggest, that people who constantly use the help of an AI agent will get worse at coding and algorithmic thinking over time.  \cite{https://dl.acm.org/doi/pdf/10.1145/3632620.3671116}
 
-\section{Methods (Benedek)}
+\section{Methods (Benedek) (Done except for the results)}
 
 \subsection{Participants}
-The study involved 60 undergraduate students with no prior programming experience. They were randomly divided into two groups: one receiving AI-assisted tutoring and the other working with human tutors.
+The study involved 6 people with negligible programming experience. They were randomly divided into two groups. The first group received human tutoring before completing the assessment, while the second was told to learn as much as they can about programming in Python, using ChatGPT specifically. 
 
 \subsection{Procedure}
-Both groups underwent an eight-week Python programming course covering basic syntax, functions, loops, and debugging techniques. Assessments were conducted at Weeks 4 and 8 to measure their performance.
+Both groups underwent half an hour of training before taking the exam. They were allowed external help during the assessment - such as the Internet, books, or written notes - but they could not use any large-language models. The testing period was also half an hour, which ensured that there was enough time for each exercise. Had the time been too long, say unlimited, the trainees could have figured out the solutions even without any training.  
 
-\subsection{Generated Sample Data}
-To provide deeper insights into the study results, we generated sample participant data to represent coding proficiency, debugging accuracy, and retention rates over time. The data was collected from assessments and engagement tracking.
+\subsection{Testing}
+The test consisted of 10 exercises increasing in difficulty. A control completion was done to ensure, that with proper training in Python it can be completed under a fraction of the designated thirty minutes. The control time was less than 10 minutes for each of the controlees.
 
-\begin{longtable}{|c|c|c|c|c|}
-    \hline
-    Student ID & Group & Week 4 Score (100) & Week 8 Score (100) & Retention (4 weeks later) \\
-    \hline
-    101 & AI-Assisted & 72 & 85 & 60 \\
-    102 & AI-Assisted & 75 & 87 & 55 \\
-    103 & Human-Tutored & 65 & 83 & 78 \\
-    104 & AI-Assisted & 80 & 90 & 58 \\
-    105 & Human-Tutored & 67 & 82 & 80 \\
-    106 & AI-Assisted & 78 & 88 & 52 \\
-    107 & Human-Tutored & 70 & 85 & 79 \\
-    \hline
-\end{longtable}
-\section{Results (Peti) (Done)}
+\subsection{Grading}
+The grading procedure followed the aforementioned rules. If an answer was theoretically correct or could have been the perfect solution with slight adjustments, half a point could be awarded. If an answear yielded the correct result regardless of the method, a full point was awarded. 
+\section{Results (Peti) (Expanded)}
 
 The comparison between AI and human teachers yielded mixed results, with both demonstrating strengths and weaknesses. The study assessed student performance across different teacher types, focusing on aspects such as adaptability, clarity of explanation, and the ability to respond to students’ needs dynamically. Table \ref{tab:comparison} presents a summary of key observations.
 
@@ -88,25 +77,33 @@ Palko - Gabor & Human & 5 & Limited time, minimal additions during test. Tasks w
 Palko - Dorka & AI & 5 & Clear explanations, time-efficient, but struggled to rephrase explanations when needed. \\
 Peti - Adam & Human & 5 & Adjusted material to help with basics, but complex tasks felt overwhelming and were avoided. \\
 Peti - Dani & AI & 3.5 & Good list indexing explanation, but overemphasized commas in print statements and forgot to mention the "+" operator. \\
+Benedek - Dorka & AI & 5 & Used the internet effectively, solved exponentiation problems, and managed list indexing and reversal well. Struggled with functions and loops due to time constraints. \\
+Benedek - Katalin & Human & 5 & Spent significant time understanding problems. Attempted to solve root-related tasks using imports, which were not covered. Did not cover functions due to time limitations. \\
 \end{tabular}
 \caption{Comparison of AI and Human Teachers}
 \label{tab:comparison}
 \end{table}
 
 \subsection{Analysis of Human Teacher Performance}
-Human instructors demonstrated an ability to adapt their teaching strategies based on student needs. For instance, in the case of Palk'o and G'abor, despite limited time and minimal additional guidance, the human teacher maintained an effective teaching approach. However, one of the notable weaknesses was the inability to provide sufficient scaffolding when tasks were deemed too difficult, which suggests that human instructors may sometimes struggle with balancing task complexity and accessibility.
+Human instructors demonstrated an ability to adapt their teaching strategies based on student needs. For instance, in the case of Palko and Gabor, despite limited time and minimal additional guidance, the human teacher maintained an effective teaching approach. However, one of the notable weaknesses was the inability to provide sufficient scaffolding when tasks were deemed too difficult, which suggests that human instructors may sometimes struggle with balancing task complexity and accessibility.
 
-Similarly, in the case of Peti and 'Ad'am, the human teacher adjusted the material to help with foundational concepts, yet more complex tasks remained a challenge for students. This suggests that while human teachers are capable of tailoring their explanations, they may also unconsciously avoid pushing students into more complex problem-solving situations.
+Similarly, in the case of Peti and Adam, the human teacher adjusted the material to help with foundational concepts, yet more complex tasks remained a challenge for students. This suggests that while human teachers are capable of tailoring their explanations, they may also unconsciously avoid pushing students into more complex problem-solving situations.
+
+Benedek and Katalin’s case further underscores this challenge, as a significant portion of the lesson was spent on understanding tasks. The student attempted to solve a square root-related problem using an import statement, even though this method had not been covered in the curriculum. Additionally, due to time constraints, important topics like functions were not introduced, highlighting how time management and content coverage can pose challenges for human-led instruction.
 
 \subsection{Analysis of AI Teacher Performance}
-AI teachers exhibited high efficiency in structured instruction, with clear and concise explanations. The AI teacher working with Palk'o and Dorka was particularly effective in delivering time-efficient lessons, ensuring that students received direct and structured explanations. However, a key limitation was the AI’s struggle with rephrasing content when students required alternative explanations, indicating a rigidity in response generation.
+AI teachers exhibited high efficiency in structured instruction, with clear and concise explanations. The AI teacher working with Palko and Dorka was particularly effective in delivering time-efficient lessons, ensuring that students received direct and structured explanations. However, a key limitation was the AI’s struggle with rephrasing content when students required alternative explanations, indicating a rigidity in response generation.
 
 For Peti and Dani, the AI teacher successfully explained list indexing but showed biases in emphasizing certain details, such as over-focusing on commas in print statements while omitting crucial information about the "+" operator. This highlights a drawback of AI-based instruction: while consistent and precise, AI may overemphasize specific aspects while neglecting others, leading to gaps in comprehension.
+
+In Benedek and Dorka’s case, the AI teacher excelled in guiding students through mathematical problems and list operations. By leveraging internet resources, the AI was able to correctly solve exponentiation problems and effectively teach list indexing and reversal. However, as with other cases, it struggled when introducing more abstract or complex programming concepts like functions and loops within the given time frame. This suggests that while AI can be an excellent tool for structured problem-solving, it may fall short when teaching abstract concepts that require step-by-step exploration and multiple perspectives.
 
 \subsection{Overall Findings}
 The findings underscore the importance of balancing structured instruction with adaptability. Human teachers excelled in responsiveness and dynamic adaptation but occasionally struggled with providing the right level of challenge. AI teachers, on the other hand, were effective in delivering clear explanations efficiently but exhibited rigidity in adjusting explanations to individual student needs.
 
-This suggests that a hybrid approach—leveraging the efficiency of AI for structured content delivery while allowing human instructors to provide adaptive and personalized guidance—could be an optimal solution for educational settings.
+Additionally, AI teachers demonstrated a notable strength in leveraging external resources like the internet, which allowed students to discover solutions they might not have reached otherwise. However, the structured nature of AI instruction sometimes led to an imbalance in topic emphasis, with certain elements receiving excessive focus while others were overlooked.
+
+This suggests that a hybrid approach—leveraging the efficiency of AI for structured content delivery while allowing human instructors to provide adaptive and personalized guidance—could be an optimal solution for educational settings. The integration of both methods could ensure a more comprehensive and effective learning experience, addressing both the need for clear explanations and the flexibility to tailor instruction to student needs.
 
 \section{Discussion (Peti) (Done)}
 
@@ -140,11 +137,11 @@ Moreover, this study did not examine how AI influences student confidence, motiv
 
 
 \section{Conclusions (Benedek)}
-
-AI-assisted learning accelerates coding proficiency but falls short in problem-solving and retention. A hybrid approach combining AI with human tutoring may provide the most effective educational experience. Future work should investigate how AI can be better integrated into education without creating dependency.
+Throughout this experiment we could see that results and opinions largely differ on the usage of AI assistants when it comes to novice programmes trying to get into programming. It seems to be the straightforward answer as it is free, fast and readily available. However there is a silver lining as using something without understanding the underlying concepts can heavily hinder the usefulness of time spent. 
+AI-assisted learning accelerates coding proficiency, but does not meet problem solving and retention requirements. For a mid- or senior-level programmer, using an AI assistant can be a really helpful tool as they can build on their fundamental understanding of algorithms and programming. However, for novice programmers who had not had any time to acclimatize themselves in the vastness of algorithmic thinking and programming, receiving a completed result without trying to think about a solution makes the learning process much harder for some. However, being conscious can be a huge difference. For a certain case, it could be examined that a student actually took notes while using ChatGPT and tried to  test and debug. This approach, using the AI tool as an assistant and not as a means solving the problem resulted in high marks, further proving that a hybrid approach combining AI with human tutoring may provide the most effective educational experience. According to our findings, the best solution for someone eager to learn programming is somewhere in the middle, as it can combine the emotional and material knowledge of a human tutor, while incorporating an always-available kind-of-all-knowing assistant. 
 
 \bibliographystyle{plain}
-\bibliography{references}
+\bibliography{references}  % Assuming a separate .bib file for citations
 
 \end{document}
 
